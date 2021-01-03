@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://faster_sprite.gd" type="Script" id=1]
+[ext_resource path="res://mainfaster_sprite.gd" type="Script" id=2]
+[ext_resource path="res://imageedit_6_7876265392.png" type="Texture" id=3]
+[ext_resource path="res://redsq.png" type="Texture" id=4]
+
+[node name="mainfaster_sprite" type="Node"]
+script = ExtResource( 2 )
+
+[node name="faster_sprite" type="Sprite" parent="."]
+position = Vector2( 371.886, 326.58 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+script = ExtResource( 1 )
+
+[node name="distance" type="Label" parent="."]
+margin_left = 671.0
+margin_top = 104.0
+margin_right = 741.0
+margin_bottom = 118.0
+rect_scale = Vector2( 2, 2 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="time" type="Label" parent="."]
+margin_left = 799.0
+margin_top = 105.0
+margin_right = 845.0
+margin_bottom = 119.0
+rect_scale = Vector2( 2, 2 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="legend" type="Sprite" parent="."]
+position = Vector2( 624, 115 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 4 )

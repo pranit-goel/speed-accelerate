@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://maininput.gd" type="Script" id=1]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[sub_resource type="Theme" id=2]
+
+[node name="maininput" type="Node"]
+script = ExtResource( 1 )
+
+[node name="LineEdit" type="LineEdit" parent="."]
+material = SubResource( 1 )
+use_parent_material = true
+margin_left = 685.0
+margin_top = 478.0
+margin_right = 763.0
+margin_bottom = 520.0
+rect_scale = Vector2( 2, 2 )
+theme = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="text_entered" from="LineEdit" to="." method="_on_LineEdit_text_entered"]
